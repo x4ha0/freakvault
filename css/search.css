@@ -1,0 +1,9 @@
+/* search */
+.search{position:fixed;inset:0;background:var(--bk);z-index:80;padding:90px var(--pad) var(--pad);overflow:auto}
+.search[hidden]{display:none}
+.search .close{position:absolute;top:22px;right:var(--pad);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600}
+.search input{width:100%;background:none;border:0;border-bottom:1px solid var(--line);color:var(--ow);font:800 clamp(1.8rem,6vw,4rem)/1.2 Archivo,sans-serif;font-stretch:112%;padding:10px 0;outline:0;text-transform:uppercase}
+.search ul{list-style:none;padding:0;margin-top:24px}
+.search li a{display:flex;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line);transition:padding .3s}
+.search li a:hover{padding-left:14px}
+.search li span{color:var(--gr)}

@@ -1,0 +1,20 @@
+/* sections */
+section{padding:clamp(70px,11vw,160px) var(--pad)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end;margin-bottom:56px}
+.sec-head h2{font-size:clamp(2.2rem,6vw,5.5rem)}.sec-head p{color:var(--gr);max-width:34ch;justify-self:end}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px) clamp(16px,2vw,32px)}
+.card .cover{margin-bottom:18px}
+.card .row{display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.card h3{font-size:1.15rem;line-height:1.05;margin-bottom:8px}.card .price{font-weight:700;font-size:.9rem}
+.card p{color:var(--gr);font-size:.9rem;max-width:36ch;margin-bottom:10px}
+.meta{display:flex;gap:18px;color:var(--gr);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px}
+.card .acts{display:flex;gap:10px}.card .btn{padding:13px 18px}
+.soonbig{font-weight:800;font-stretch:112%;letter-spacing:-.02em;font-size:clamp(2.2rem,7vw,6rem);line-height:1;color:var(--gr);padding:40px 0 10vh}
+.empty{padding:60px 0;color:var(--gr);max-width:42ch}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.sec-head{grid-template-columns:1fr}.sec-head p{justify-self:start}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+/* animated dots (like "LOADING...") */
+.dots i{display:inline-block;font-style:normal;animation:dotwave 1.4s ease-in-out infinite}
+.dots i:nth-child(2){animation-delay:.2s}.dots i:nth-child(3){animation-delay:.4s}
+@keyframes dotwave{0%,60%,100%{opacity:.15;transform:translateY(0)}30%{opacity:1;transform:translateY(-.12em)}}
+@media(prefers-reduced-motion:reduce){.dots i{animation:none;opacity:1}}

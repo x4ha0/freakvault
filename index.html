@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FREAK — Drum Kits, Sound Packs & Presets for Producers</title>
+<meta name="description" content="FREAK makes original drum kits, sound packs and presets for producers and beatmakers. Download the kits and build your own sound.">
+<meta property="og:title" content="FREAK — Built for the sound">
+<meta property="og:description" content="Original drum kits, sound packs and presets for producers.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#080808">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23080808'/%3E%3Ctext x='16' y='24' font-size='22' font-weight='900' text-anchor='middle' fill='%23F1F0EC' font-family='Arial'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader" aria-hidden="true"><span>FREAK</span></div>
+<a href="#/" class="catlogo" aria-label="FREAK home"><span class="cf"><span class="ct"><img class="cat" src="assets/images/img-1.png" alt="FREAK" draggable="false"><img class="cw" src="assets/images/img-2.png" alt="" draggable="false"></span></span></a>
+<header class="nav" id="nav">
+  <span class="logo-gap" aria-hidden="true"></span>
+  <nav class="links" id="links" aria-label="Main">
+    <a href="#/">Home</a><a href="#/c/drumkit">Drum Kits</a><a href="#/c/soundpack">Sound Packs</a><a href="#/c/nejma">NEJMA<span class="chk">SPECIAL</span></a><a href="#/c/preset">Presets</a><a href="#/collection">Collection</a>
+    <div class="nav-right-m"><a href="#" data-search>Search</a><a href="#" data-profile class="pf-m">Profile</a><a href="" data-discord target="_blank" rel="noopener">Discord</a></div>
+  </nav>
+  <div class="right"><button data-search>Search</button><a data-discord target="_blank" rel="noopener" href="#">Discord</a><button class="pf" data-profile aria-label="Your profile"><span class="pfa">?</span><span class="pfn">Profile</span></button></div>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+</header>
+<button id="pfFix" class="pffix" data-profile aria-label="Your profile" hidden></button>
+
+<div id="search" class="search" hidden>
+  <button class="close" data-close aria-label="Close search">Close</button>
+  <input id="q" type="search" placeholder="Search kits, sounds, genres" aria-label="Search products" autocomplete="off">
+  <ul id="results"></ul>
+</div>
+
+
+<div id="license" class="lic" hidden role="dialog" aria-modal="true" aria-label="License">
+  <button class="close" data-lclose aria-label="Close license">Close</button>
+  <div class="licbox"><pre>FREAKS VAULT — CUSTOM WEBSITE LICENSE
+License ID: FV-2026-09X
+Version: 1.1.1.9
+Active Since: September 23, 2026
+Owner: FREAK
+Website: https://x4ha0.github.io/freakvault/#/
+
+1. Ownership
+All original website designs, branding, graphics, layouts, and original content are the property of FREAKS VAULT unless otherwise stated.
+
+2. Usage Rights
+Users are permitted to browse and use the website for personal and educational purposes.
+
+3. Restrictions
+Users may not:
+• Copy or redistribute original website designs without permission.
+• Claim ownership of FREAKS VAULT branding.
+• Modify or impersonate the official website.
+• Use the website for fraudulent or harmful activities.
+
+4. Third-Party Content
+Third-party plugins, software, trademarks, logos, and other materials remain the property of their respective owners and are subject to their own licenses.
+
+5. Disclaimer
+FREAKS VAULT is provided "AS IS" without warranties of any kind. The website owner is not responsible for third-party content, external services, or issues arising from their use.
+
+6. License Modifications
+FREAKS VAULT reserves the right to update, modify, or replace this license at any time.
+
+7. Contact
+For licensing questions or copyright concerns:
+Email: freaksteammanaging@gmail.com
+
+© 2026 FREAKS VAULT. All Rights Reserved.
+FREAKS VAULT — SEEING YOU ON STAGE.</pre></div>
+</div>
+
+<div id="profile" class="prof" hidden role="dialog" aria-modal="true" aria-label="Your profile">
+  <div class="profbox">
+    <button class="close" data-pclose aria-label="Close">Close</button>
+    <div class="pfa big" id="pAvatar">?</div>
+    <h3 id="pName"></h3><p id="pAka"></p>
+    <dl><dt>Role</dt><dd id="pRole"></dd><dt>Spotify</dt><dd id="pSpot"></dd></dl>
+    <button type="button" class="btn" id="pOut">LOG OUT</button>
+  </div>
+</div>
+
+<div id="gate" class="gate" hidden role="dialog" aria-modal="true" aria-label="Unlock the vault">
+  <div class="gbg" aria-hidden="true"></div>
+  <div class="gs g-welcome" data-step="0"><h1><span>WELCOME</span></h1></div>
+  <div class="gs g-code" data-step="1">
+    <h1><span>UNLOCK THE VAULT</span></h1>
+    <form id="gCode" autocomplete="off"><input id="gCodeIn" type="text" placeholder="ENTER THE CODE" aria-label="Vault code" autocapitalize="characters" spellcheck="false"><button class="btn solid" id="gUnlock" type="submit">UNLOCK</button></form>
+    <p class="gerr" id="gErr" aria-live="polite"></p>
+  </div>
+  <div class="gs g-form" data-step="2">
+    <h2>WHO ARE YOU?</h2>
+    <form id="gForm" autocomplete="off" novalidate>
+      <label class="avpick" for="gPhoto"><span class="avc" id="gAv"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><span class="avt">Profile photo<small>Optional. Tap to choose from your phone or computer</small></span></label>
+      <input type="file" id="gPhoto" accept="image/*,.heic,.heif,.jfif,.webp,.avif,.bmp,.gif,.svg" hidden>
+      <label>Name<input id="gName" type="text" maxlength="40" placeholder="Your name" required></label>
+      <label>A.K.A<input id="gAka" type="text" maxlength="40" placeholder="Your artist / producer name" required></label>
+      <div class="opt" id="optRole"><span class="label">Options</span><div class="chips"><button type="button" data-role="Producer">PRODUCER</button><button type="button" data-role="Artist">ARTIST</button></div></div>
+      <div class="opt hid" id="optSpot"><span class="label">Spotify</span><div class="chips"><button type="button" data-spot="With Spotify access">WITH SPOTIFY ACCESS</button><button type="button" data-spot="No Spotify access">NON-SPOTIFY ACCESS</button></div></div>
+      <p class="gerr" id="gErr2" aria-live="polite"></p>
+      <button class="btn solid hid" id="gGo" type="submit">ENTER THE VAULT</button>
+    </form>
+  </div>
+</div>
+
+<main id="app"></main>
+
+<section class="discord">
+  <a class="dlogo" data-discord target="_blank" rel="noopener" href="#" aria-label="Join our Discord server">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5.5C7 4 9 3.4 9.6 3.3L10.2 4.5C11.4 4.3 12.6 4.3 13.8 4.5L14.4 3.3C15 3.4 17 4 19 5.5C21 8.5 21.8 12 21.4 16.5C19.8 17.8 18.2 18.6 16.6 19.1L15.6 17.6C16.2 17.4 16.8 17.1 17.3 16.8L16.7 16.3C13.8 17.7 10.2 17.7 7.3 16.3L6.7 16.8C7.2 17.1 7.8 17.4 8.4 17.6L7.4 19.1C5.8 18.6 4.2 17.8 2.6 16.5C2.2 12 3 8.5 5 5.5Z"/><ellipse class="eye" cx="9" cy="12.2" rx="1.7" ry="1.9"/><ellipse class="eye" cx="15" cy="12.2" rx="1.7" ry="1.9"/></svg>
+  </a>
+</section>
+<footer class="foot">
+  <div><strong class="logo">FREAK</strong><p>Made for producers. Built around sound.</p></div>
+  <nav aria-label="Footer"><a href="#/about">About</a><a href="#/contact">Contact</a><button type="button" class="linkbtn" data-license>Read License</button><a href="#/collection">Collection</a><a data-discord target="_blank" rel="noopener" href="#">Discord</a></nav>
+  <div><a data-mail href="#">Report a problem or Contact with us!</a><div id="social"></div></div>
+  <small class="copy">© <span id="year"></span> FREAK. ALL RIGHTS RESERVED.</small>
+</footer>
+<script src="js/config.js"></script>
+<script src="js/products.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/views.js"></script>
+<script src="js/router.js"></script>
+<script src="js/interactions.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/search.js"></script>
+<script src="js/clients-form.js"></script>
+<script src="js/static-links.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/discord-badge.js"></script>
+<script src="js/modals.js"></script>
+<script src="js/profile.js"></script>
+<script src="js/gate.js"></script>
+<script src="js/external-links.js"></script>
+<script src="js/main.js"></script>
+<script type="module" src="js/firebase.js"></script>
+</body>
+</html>

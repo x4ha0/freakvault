@@ -1,0 +1,12 @@
+/* ---- v2 edits ---- */
+.cover,.newwrap{border-radius:22px}
+.fl img{border-radius:6%}
+.newwrap .cover{border-radius:22px}
+/* smaller discord strip */
+.discord{padding:clamp(14px,2vw,22px) var(--pad)!important}
+.dlogo{flex-direction:row!important;gap:14px!important}
+.dlogo svg{width:clamp(34px,4vw,44px)!important}
+.dlogo .click{font-size:clamp(.8rem,1.2vw,1rem)!important}
+/* footer button link */
+.linkbtn{background:none;border:0;padding:0;color:#c9c8c3;font:inherit;text-align:left;cursor:pointer;transition:color .3s}
+.linkbtn:hover{color:#fff}

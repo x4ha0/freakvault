@@ -1,0 +1,10 @@
+/* profile photo */
+#gForm label.avpick{flex-direction:row;align-items:center;gap:16px;cursor:pointer;color:var(--ow)}
+.avc{flex:none;width:68px;height:68px;border-radius:50%;border:1px dashed var(--gr);display:grid;place-items:center;color:var(--gr);background-size:cover;background-position:center;transition:border-color .3s,color .3s}
+.avpick:hover .avc{border-color:var(--ow);color:var(--ow)}
+.avc.has{border:1px solid var(--ow)}
+.avt{display:flex;flex-direction:column;gap:2px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700}
+.avt small{font-size:.66rem;letter-spacing:.04em;text-transform:none;font-weight:500;color:var(--gr)}
+.pfa.has{background-size:cover;background-position:center;border-color:#fff}
+
+.avc.wait{opacity:.5;animation:pulse 1s ease-in-out infinite alternate}

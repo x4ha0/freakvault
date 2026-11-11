@@ -1,0 +1,10 @@
+/* nav profile photo: drawn outside the nav so the blend mode does not invert it */
+.nav .pf .pfa{width:34px;height:34px;font-size:.85rem}
+.nav .pf.ghost{visibility:hidden}
+.pffix{position:fixed;z-index:60;width:34px;height:34px;border-radius:50%;background:#151515 center/cover no-repeat;border:1.5px solid rgba(255,255,255,.9);box-shadow:0 2px 10px rgba(0,0,0,.35);color:#fff;font:800 .85rem Archivo,sans-serif;display:grid;place-items:center;cursor:pointer;transition:transform .3s}
+.pffix:hover{transform:scale(1.1)}
+.pffix[hidden]{display:none}
+@media(max-width:960px){.pffix{display:none}}
+/* nav right side: everything on the same centre line */
+.nav .right{align-items:center}
+.nav .right>a,.nav .right>button{display:inline-flex;align-items:center;line-height:1}

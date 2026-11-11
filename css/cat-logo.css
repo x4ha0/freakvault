@@ -1,0 +1,31 @@
+/* cat logo: 3D, floating, FREAKS painted inside its face */
+@property --p{syntax:'<number>';inherits:false;initial-value:0}
+.logo-gap{display:block;width:90px;height:40px}
+.catlogo{position:fixed;top:6px;left:var(--pad);z-index:60;display:block;width:78px;perspective:600px;-webkit-tap-highlight-color:transparent}
+.catlogo .cf{display:block;animation:catfloat 4.2s ease-in-out infinite;will-change:transform}
+.catlogo .ct{position:relative;display:block;transform-style:preserve-3d;filter:drop-shadow(0 8px 10px rgba(0,0,0,.45));transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .7s}
+.catlogo img{display:block;user-select:none}
+.catlogo .cat{width:100%;height:auto}
+.catlogo .cw{position:absolute;left:29%;top:24.5%;width:36%;height:auto;filter:brightness(0);transform:rotate(-3deg) translateZ(2px);--p:0;
+ -webkit-mask-image:linear-gradient(90deg,#000 calc(var(--p)*1%),transparent calc(var(--p)*1% + 8%));
+ mask-image:linear-gradient(90deg,#000 calc(var(--p)*1%),transparent calc(var(--p)*1% + 8%))}
+body.ready .catlogo .cw{animation:paint 2s linear 1s forwards}
+.catlogo:hover .cw{animation:paint 1.6s linear forwards!important}
+.catlogo:hover .ct,.catlogo:focus-visible .ct{transform:rotateY(-18deg) rotateX(8deg) scale(1.08);filter:drop-shadow(0 14px 14px rgba(0,0,0,.5))}
+.catlogo:active .ct{transform:scale(.94);transition-duration:.15s}
+@keyframes catfloat{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-4px) rotate(1.5deg)}}
+@keyframes paint{
+ 0%{--p:0}
+ 14%{--p:20;animation-timing-function:ease-out}
+ 17%{--p:20}
+ 31%{--p:36;animation-timing-function:ease-out}
+ 34%{--p:36}
+ 48%{--p:52;animation-timing-function:ease-out}
+ 51%{--p:52}
+ 65%{--p:67;animation-timing-function:ease-out}
+ 68%{--p:67}
+ 82%{--p:84;animation-timing-function:ease-out}
+ 85%{--p:84}
+ 100%{--p:108}}
+@media(max-width:800px){.catlogo{width:62px;top:4px}.logo-gap{width:72px}}
+@media(prefers-reduced-motion:reduce){.catlogo .cf{animation:none}.catlogo .cw{animation:none!important;--p:108}}

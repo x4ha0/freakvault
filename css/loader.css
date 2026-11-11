@@ -1,0 +1,4 @@
+#loader{position:fixed;inset:0;background:var(--bk);z-index:100;display:grid;place-items:center;transition:transform .9s cubic-bezier(.77,0,.18,1)}
+#loader span{font-weight:900;font-stretch:125%;font-size:clamp(2rem,9vw,6rem);letter-spacing:-.03em;animation:pulse 1s ease-in-out infinite alternate}
+#loader.done{transform:translateY(-100%)}
+@keyframes pulse{to{opacity:.35}}

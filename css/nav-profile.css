@@ -1,0 +1,4 @@
+/* nav profile */
+.nav .pf{display:inline-flex;align-items:center;gap:8px}
+.pfa{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;border:1px solid currentColor;font-size:.7rem;font-weight:800;letter-spacing:0}
+.pfa.big{width:76px;height:76px;font-size:2rem;margin:0 auto 18px;background:var(--ow);color:var(--bk);border:0}

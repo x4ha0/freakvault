@@ -1,0 +1,4 @@
+/* contact */
+.contact h2{font-size:clamp(2.6rem,9vw,9rem);margin-bottom:34px}
+.contact p{color:var(--gr);max-width:36ch;margin-bottom:24px}
+.mail{font-size:clamp(1.3rem,3.6vw,3rem);font-weight:700;font-stretch:108%;border-bottom:2px solid var(--ow);padding-bottom:4px;word-break:break-all}

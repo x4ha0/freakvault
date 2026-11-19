@@ -1,0 +1,16 @@
+/* discord + footer */
+.discord{padding:clamp(36px,5vw,64px) var(--pad);background:var(--ow);color:var(--bk);display:grid;grid-template-columns:1fr;justify-items:center;text-align:center;overflow:hidden}
+.dlogo{position:relative;display:flex;flex-direction:column;align-items:center;gap:14px}
+.dlogo svg{width:clamp(70px,8vw,100px);fill:var(--bk);overflow:visible;opacity:0;transform:translateY(32px);transition:opacity 1.3s cubic-bezier(.22,.8,.2,1),transform 1.3s cubic-bezier(.22,.8,.2,1)}
+.dlogo .eye{fill:var(--ow)}
+.dlogo .click{font-weight:900;font-stretch:125%;font-size:clamp(1rem,1.8vw,1.35rem);letter-spacing:-.01em;line-height:1;opacity:0;transition:opacity 1.3s .3s}
+.dlogo.in svg,.dlogo.in .click{opacity:1;transform:none}
+.dlogo.in:hover svg{transform:scale(1.08);transition-duration:.7s}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px;padding:36px var(--pad) 16px;font-size:.82rem;line-height:1.4}
+.foot .logo{font-size:1.1rem}
+.foot p{color:var(--gr);margin-top:6px}.foot nav{display:flex;flex-direction:column;gap:5px}
+.foot nav a,.foot>div a{color:#c9c8c3;transition:color .3s}.foot a:hover{color:#fff}
+#social{display:flex;gap:14px;margin-top:8px;color:var(--gr)}.foot small{grid-column:1/-1;color:var(--gr);border-top:1px solid var(--line);padding-top:14px;font-size:.62rem}
+@media(max-width:700px){.foot{grid-template-columns:1fr}}
+.foot a.soc{display:inline-flex;align-items:center;line-height:0}
+.foot a.soc svg{width:30px;height:auto;display:block}

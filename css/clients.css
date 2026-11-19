@@ -1,0 +1,10 @@
+/* clients */
+.clients{border-top:1px solid var(--line);padding-top:clamp(50px,7vw,90px);padding-bottom:clamp(40px,6vw,70px)}
+.clients h2{font-size:clamp(1.8rem,4.5vw,3.6rem);margin-bottom:14px}
+.clients>p{color:var(--gr);max-width:46ch}
+.clients form{display:grid;grid-template-columns:1fr 1fr auto;gap:14px;align-items:end;margin-top:28px}
+.clients label{display:grid;gap:8px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--gr)}
+.clients input{background:none;border:0;border-bottom:1px solid var(--line);color:var(--ow);font:600 1rem Archivo,sans-serif;padding:10px 0;outline:0}
+.clients input:focus{border-color:var(--ow)}
+.clients .cmsg{margin-top:16px;min-height:1.5em;font-weight:700;color:var(--ow)}.cmsg.bad{color:#e0645c}
+@media(max-width:800px){.clients form{grid-template-columns:1fr}}

@@ -1,0 +1,6 @@
+/* buttons */
+.btn{display:inline-block;padding:17px 30px;border:1px solid var(--ow);position:relative;overflow:hidden;transition:color .4s,background .4s;z-index:0}
+.btn::before{content:"";position:absolute;inset:0;background:var(--ow);transform:translateY(101%);transition:transform .45s cubic-bezier(.3,.7,.2,1);z-index:-1}
+.btn:hover::before{transform:none}.btn:hover{color:var(--bk)}
+.btn.solid{background:var(--ow);color:var(--bk)}.btn.solid::before{background:var(--bk)}.btn.solid:hover{color:var(--ow)}
+.btn.light{border-color:var(--bk);color:var(--bk)}.btn.light::before{background:var(--bk)}.btn.light:hover{color:var(--ow)}

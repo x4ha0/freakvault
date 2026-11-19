@@ -1,0 +1,9 @@
+/* featured */
+.feat{background:var(--ow);color:var(--bk);display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(30px,6vw,100px);align-items:center}
+.feat h2{font-size:clamp(2.6rem,6.5vw,6.5rem);margin-bottom:28px}
+.feat .cover{max-width:560px}
+.feat ul{list-style:none;padding:0;margin:26px 0;display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid currentColor;padding:7px 12px}
+.feat dl{display:grid;grid-template-columns:auto 1fr;gap:8px 28px;margin-bottom:34px;font-size:.9rem}.feat dt{color:#6d6c68}
+.feat .btn{border-color:var(--bk)}.feat .btn::before{background:var(--bk)}.feat .btn:hover{color:var(--ow)}.feat .btn.solid{background:var(--bk);color:var(--ow)}.feat .btn.solid::before{background:var(--ow)}.feat .btn.solid:hover{color:var(--bk)}
+@media(max-width:800px){.feat{grid-template-columns:1fr}}

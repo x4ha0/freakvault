@@ -1,0 +1,12 @@
+/* license */
+.lic,.prof{position:fixed;inset:0;z-index:120;background:rgba(8,8,8,.96);overflow:auto;padding:80px var(--pad) var(--pad);animation:fin .4s ease both}
+.lic[hidden],.prof[hidden],.gate[hidden]{display:none}
+.lic .close,.profbox .close{position:absolute;top:22px;right:var(--pad);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ow)}
+.licbox{max-width:780px;margin:0 auto;border:1px solid var(--line);border-radius:22px;padding:clamp(22px,4vw,48px);background:var(--ch)}
+.licbox pre{white-space:pre-wrap;font:500 .92rem/1.7 Archivo,sans-serif;color:#d8d7d2}
+.prof{display:grid;place-items:center}
+.profbox{position:relative;width:min(420px,100%);border:1px solid var(--line);border-radius:22px;padding:44px 30px 30px;background:var(--ch);text-align:center}
+.profbox .close{top:16px;right:20px}
+.profbox h3{font-size:1.6rem}.profbox p{color:var(--gr)}
+.profbox dl{display:grid;grid-template-columns:90px 1fr;gap:10px;text-align:left;margin:22px 0;border-top:1px solid var(--line);padding-top:18px}.profbox dt{color:var(--gr)}
+@keyframes fin{from{opacity:0}}

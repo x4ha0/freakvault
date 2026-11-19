@@ -1,0 +1,22 @@
+/* compact: smaller text and sections (about 12% smaller overall) */
+html{font-size:87.5%}
+.hero h1{font-size:clamp(2.2rem,5.2vw,5.4rem)}
+.hero{padding-top:104px}
+.feat h2{font-size:clamp(2.2rem,5.2vw,5.4rem);margin-bottom:22px}
+.sec-head h2{font-size:clamp(1.9rem,4.8vw,4.6rem)}
+section{padding:clamp(56px,8.5vw,128px) var(--pad)}
+.newwrap{max-width:440px}
+.floaters{height:min(70vh,580px);min-height:420px}
+.fl{max-width:290px}
+.hero-word{font-size:24vw}
+/* socials at the very bottom of the footer */
+.foot #social{grid-column:1/-1;justify-content:center;margin-top:18px;gap:22px}
+/* no sideways scroll on phones (the rotated NEW! tag sticks out) */
+.feat{overflow-x:clip}
+/* hero text: bigger and a bit higher */
+.hero h1{font-size:clamp(2.8rem,6.2vw,6.6rem)}
+.hero p{font-size:1.1rem}
+.hero .label{font-size:.82rem}
+.hero .btn{font-size:.82rem}
+.hero>div:not(.loop):not(.floaters):not(.hero-word){position:relative;top:-7vh}
+@media(max-width:800px){.hero>div:not(.loop):not(.floaters):not(.hero-word){top:0}}

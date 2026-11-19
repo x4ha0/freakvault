@@ -1,0 +1,18 @@
+/* barbed wire edges */
+.tick{position:relative;padding:50px 0}
+.tick::before,.tick::after{content:"";position:absolute;left:0;right:0;height:30px;background:url(wire.png) repeat-x 0 0/auto 30px;opacity:.9;pointer-events:none}
+.tick::before{top:8px;animation:wire 24s linear infinite}
+.tick::after{bottom:8px;animation:wire 24s linear infinite reverse}
+@keyframes wire{to{background-position:-356px 0}}
+@media(prefers-reduced-motion:reduce){.tick::before,.tick::after{animation:none}}
+
+/* wire: static, flush with the strip edges */
+.tick{padding:60px 0;border-top:0}
+.tick::before,.tick::after{height:34px;background:url(wire.png) repeat-x 0 50%/auto 34px;animation:none!important;opacity:1}
+.tick::before{top:0}.tick::after{bottom:0}
+
+/* thinner wire, tight to the strip */
+.tick{padding:34px 0}
+.tick::before,.tick::after{height:18px;background:url(wire.png) repeat-x 0 50%/auto 18px;top:auto;bottom:auto}
+.tick::before{top:0}.tick::after{bottom:0}
+.tick img{height:42px}

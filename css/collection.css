@@ -1,0 +1,4 @@
+/* collection */
+.drop{display:block;width:100%;margin-top:34px;border:2px dashed var(--line);padding:clamp(40px,8vw,110px) 20px;text-align:center;font-weight:800;font-stretch:112%;text-transform:uppercase;letter-spacing:-.01em;font-size:clamp(1.2rem,3.2vw,2.4rem);transition:.3s;cursor:pointer}
+.drop small{display:block;margin-top:12px;color:var(--gr);font-weight:600}
+.drop:hover,.drop.over{border-color:var(--ow);background:rgba(241,240,236,.06)}
